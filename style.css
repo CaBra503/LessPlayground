@@ -1,0 +1,76 @@
+/*
+    Playing with some Less Mixins, Variables and nesting
+    I wanted to take some extra time to get more
+    familiar with Less. Since it is what we use at work. old or not. 
+    We use less for styling.
+*/
+/*
+With Importing I can break projects down
+into even more modular bits and pieces.
+I can break the styling into independent
+modular pages for things like
+////Css Reset or Normalization, Colors Fonts/Typography
+Ui Elements, The main style of the page, The javaScript so on.
+*/
+/*
+lightBlue: #006eff;;
+@lightGreen: #dfd;
+@Red: #e95a18;
+
+@defaultThemeColor:@lightGreen;
+@secondaryThemeColor:@Red;
+*/
+.shape {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background: #dde8ff;
+  margin: 20px;
+}
+.Round {
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  border-radius: 9999px;
+}
+/*
+Less Provides color functions, 
+Things like darken() lighten()
+to add black or white.
+*/
+/*
+To give more color Or grey 
+saturate() and desaturate()
+fadein()0 fadeout()
+to increase transparency
+spin)() to modify the hue;i
+*/
+.Border {
+  border: 100px solid #bbbbbb;
+}
+#shape1 {
+  border-radius: 99999px;
+  background: #725a18;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  border: 100px solid #bbbbbb;
+}
+#shape2 {
+  border: 100px solid #bbbbbb;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  border-radius: 9999px;
+  background: #006eff;
+}
+#shape2:hover {
+  background: red;
+}
+#shape3 {
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  border: 100px solid #bbbbbb;
+}
+#header h1 {
+  border: solid 1px black;
+}
